@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Memory Money</title>
+  <!-- upgraded to latest font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div id="container">
+    <div id="header" class="mainHeaderStyle mainHeaderArea">
+      <div class="headerTop">
+        <p class="giantText">MEMORY CA$H!<p>
+      </div>
+      <div class="headerStars">
+        <i id="star_1" class="stars fas fa-star fa-2x"></i>
+        <i id="star_2" class="stars fas fa-star fa-2x"></i>
+        <i id="star_3" class="stars fas fa-star fa-2x"></i>
+      </div>
+      <div class="headerMoves">
+        <p class="moves">Moves <span id=movesNum>1</span></p>
+      </div>
+      <div class="headerDollars">
+        <p class="dollarsText">Dollar$ <span id=dollarsNum>20.00</span></p>
+      </div>
+      <div class="reset">
+        <i id="refresh" class="restart fas fa-redo-alt"></i>
+      </div>
+    </div>
+    <div id="leftSidebar" class="leftSidebarStyle leftSidebarArea">
+      <div id="successBox" class="success boxsize">
+        <h1 class="messageText">Yippee!! We're in the money!!</h1>
+        <h2 class="messageText">Your winnings have been added to your Lifetime Earnings. When you comeback to play again, your Lifetime Earnings and your accumulated stars will always be displayed.  Click the <span class="orangeText">ORANGE</span> Reset Button for another try.</h2>
+      </div>
+      <div id="failureBox" class="failure boxsize">
+        <h1 class="messageText">Drat it!! Foiled again!!</h1>
+        <h2 class="messageText">Click the <span class="orangeText">ORANGE</span> Reset Button for another try.</h2>
+      </div>
+    </div>
+    <div id="gameBoard" class="gameBoardStyle gameBoardArea"></div>
+    <div id="rightSidebar" class="rightSidebarStyle rightSidebarArea"></div>
+    <div id="footer" class="footerStyle footerArea">
+      <div class="footerEarnings">
+        <h3 class="earnings"><span class="earningsColor">Lifetime = $</span><span id="earningsDisplayed" class="earningsColor earningsNum"></span><span class="starsEarned"> <i id="star_4" class="stars fas fa-star"></i> = <span id="starsTotal">0</span></span></h3>
+        <!-- <button id="lose">Lose</button>
+        <button id="win">Win</button>
+        <button id="oneStar">One Star</button>
+        <button id="twoStars">Two Stars</button>
+        <button id="threeStars">Three Stars</button>
+        <button id="clear">Clear</button> -->
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/greensock/CSSPlugin.min.js"></script>
+  <script src="assets/greensock/CustomEase.min.js"></script>
+  <script src="assets/greensock/CustomWiggle.min.js"></script>
+  <script src="assets/greensock/TweenMax.min.js"></script>
+  <script src="js/ninja.js"></script>
+  <!-- <script src="js/testing.js"></script> -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

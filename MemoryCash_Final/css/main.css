@@ -1,0 +1,584 @@
+/* ******************************** */
+/* Id elements are used here to
+distinguish grid main layout from other styles.
+Some id elements in the HTML file are there
+to be used as reference in the JS file */
+/* ******************************** */
+body {
+  background-color: #300057;
+  min-width: 321px;
+}
+
+@font-face {
+   font-family: moneyFont;
+   src: url(assets\fonts\Dollar Bill.ttf);
+}
+
+/* LARGE SCREENS START HERE*/
+@media screen and (min-width: 992px){
+  /* ******************************** */
+  /* Page level grid layout */
+  /* Large Screens */
+  /* ******************************** */
+  #container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 700px auto;
+    grid-template-rows: 15% 700px auto;
+    grid-template-areas:
+      "leftHeader mainHeader rightHeader"
+      "leftSidebar main rightSidebar"
+      "leftFooter mainFooter rightFooter";
+  }
+  /* ******************************** */
+  /* Gameboard grid layout*/
+  /* Large Screens */
+  /* ******************************** */
+  #gameBoard {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    grid-template-areas:
+      "spot_0 spot_1 spot_2 spot_3 spot_4 spot_5 spot_6 spot_7 spot_8 spot_9"
+      "spot_10 spot_11 spot_12 spot_13 spot_14 spot_15 spot_16 spot_17 spot_18 spot_19"
+      "spot_20 spot_21 spot_22 spot_23 spot_24 spot_25 spot_26 spot_27 spot_28 spot_29"
+      "spot_30 spot_31 spot_32 spot_33 spot_34 spot_35 spot_36 spot_37 spot_38 spot_39"
+      "spot_40 spot_41 spot_42 spot_43 spot_44 spot_45 spot_46 spot_47 spot_48 spot_49"
+      "spot_50 spot_51 spot_52 spot_53 spot_54 spot_55 spot_56 spot_57 spot_58 spot_59"
+      "spot_60 spot_61 spot_62 spot_63 spot_64 spot_65 spot_66 spot_67 spot_68 spot_69"
+      "spot_70 spot_71 spot_72 spot_73 spot_74 spot_75 spot_76 spot_77 spot_78 spot_79"
+      "spot_80 spot_81 spot_82 spot_83 spot_84 spot_85 spot_86 spot_87 spot_88 spot_89"
+      "spot_90 spot_91 spot_92 spot_93 spot_94 spot_95 spot_96 spot_97 spot_98 spot_99";
+  }
+
+  /* ******************************** */
+  /* Header grid layout */
+  /* Large Screens */
+  /* ******************************** */
+  #header{
+    display:grid;
+    grid-template-columns: 20% 30% 20% 20% 10%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas:
+      "title title title title title"
+      "stars moves dollars dollars reset";
+  }
+}
+
+/* MEDIUM SCREENS START HERE*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+  /* ******************************** */
+  /* Page level grid layout */
+  /* Medium Screens */
+  /* ******************************** */
+  #container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 600px auto;
+    grid-template-rows: 15% 600px auto;
+    grid-template-areas:
+      "leftHeader mainHeader rightHeader"
+      "leftSidebar main rightSidebar"
+      "leftFooter mainFooter rightFooter";
+  }
+  /* ******************************** */
+  /* Gameboard grid layout*/
+  /* Medium Screens */
+  /* ******************************** */
+  #gameBoard {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    grid-template-areas:
+      "spot_0 spot_1 spot_2 spot_3 spot_4 spot_5 spot_6 spot_7 spot_8 spot_9"
+      "spot_10 spot_11 spot_12 spot_13 spot_14 spot_15 spot_16 spot_17 spot_18 spot_19"
+      "spot_20 spot_21 spot_22 spot_23 spot_24 spot_25 spot_26 spot_27 spot_28 spot_29"
+      "spot_30 spot_31 spot_32 spot_33 spot_34 spot_35 spot_36 spot_37 spot_38 spot_39"
+      "spot_40 spot_41 spot_42 spot_43 spot_44 spot_45 spot_46 spot_47 spot_48 spot_49"
+      "spot_50 spot_51 spot_52 spot_53 spot_54 spot_55 spot_56 spot_57 spot_58 spot_59"
+      "spot_60 spot_61 spot_62 spot_63 spot_64 spot_65 spot_66 spot_67 spot_68 spot_69"
+      "spot_70 spot_71 spot_72 spot_73 spot_74 spot_75 spot_76 spot_77 spot_78 spot_79"
+      "spot_80 spot_81 spot_82 spot_83 spot_84 spot_85 spot_86 spot_87 spot_88 spot_89"
+      "spot_90 spot_91 spot_92 spot_93 spot_94 spot_95 spot_96 spot_97 spot_98 spot_99";
+  }
+
+  /* ******************************** */
+  /* Header grid layout */
+  /* Medium Screens */
+  /* ******************************** */
+  #header{
+    display:grid;
+    grid-template-columns: 20% 30% 20% 20% 10%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas:
+      "title title title title title"
+      "stars moves dollars dollars reset";
+  }
+}
+
+/* SMALL SCREENS START HERE*/
+@media screen and (min-width: 576px) and (max-width: 767px){
+  /* ******************************** */
+  /* Page level grid layout */
+  /* Small Screens */
+  /* ******************************** */
+  #container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 500px auto;
+    grid-template-rows: 15% 500px auto;
+    grid-template-areas:
+      "leftHeader mainHeader rightHeader"
+      "leftSidebar main rightSidebar"
+      "leftFooter mainFooter rightFooter";
+  }
+  /* ******************************** */
+  /* Gameboard grid layout*/
+  /* Small Screens */
+  /* ******************************** */
+  #gameBoard {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    grid-template-areas:
+      "spot_0 spot_1 spot_2 spot_3 spot_4 spot_5 spot_6 spot_7 spot_8 spot_9"
+      "spot_10 spot_11 spot_12 spot_13 spot_14 spot_15 spot_16 spot_17 spot_18 spot_19"
+      "spot_20 spot_21 spot_22 spot_23 spot_24 spot_25 spot_26 spot_27 spot_28 spot_29"
+      "spot_30 spot_31 spot_32 spot_33 spot_34 spot_35 spot_36 spot_37 spot_38 spot_39"
+      "spot_40 spot_41 spot_42 spot_43 spot_44 spot_45 spot_46 spot_47 spot_48 spot_49"
+      "spot_50 spot_51 spot_52 spot_53 spot_54 spot_55 spot_56 spot_57 spot_58 spot_59"
+      "spot_60 spot_61 spot_62 spot_63 spot_64 spot_65 spot_66 spot_67 spot_68 spot_69"
+      "spot_70 spot_71 spot_72 spot_73 spot_74 spot_75 spot_76 spot_77 spot_78 spot_79"
+      "spot_80 spot_81 spot_82 spot_83 spot_84 spot_85 spot_86 spot_87 spot_88 spot_89"
+      "spot_90 spot_91 spot_92 spot_93 spot_94 spot_95 spot_96 spot_97 spot_98 spot_99";
+  }
+
+  /* ******************************** */
+  /* Header grid layout */
+  /* Small Screens */
+  /* ******************************** */
+  #header{
+    display:grid;
+    grid-template-columns: 20% 30% 20% 20% 10%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas:
+      "title title title title title"
+      "stars moves dollars dollars reset";
+  }
+}
+
+/* EXTRA-SMALL SCREENS START HERE*/
+@media screen and (min-width: 320px) and (max-width: 575px){
+  /* ******************************** */
+  /* Page level grid layout */
+  /* Extra Small Screens */
+  /* ******************************** */
+  #container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 300px auto;
+    grid-template-rows: 15% 300px auto;
+    grid-template-areas:
+      "leftHeader mainHeader rightHeader"
+      "leftSidebar main rightSidebar"
+      "leftFooter mainFooter rightFooter";
+  }
+  /* ******************************** */
+  /* Gameboard grid layout*/
+  /* Extra Smalll Screens */
+  /* ******************************** */
+  #gameBoard {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    grid-template-areas:
+      "spot_0 spot_1 spot_2 spot_3 spot_4 spot_5 spot_6 spot_7 spot_8 spot_9"
+      "spot_10 spot_11 spot_12 spot_13 spot_14 spot_15 spot_16 spot_17 spot_18 spot_19"
+      "spot_20 spot_21 spot_22 spot_23 spot_24 spot_25 spot_26 spot_27 spot_28 spot_29"
+      "spot_30 spot_31 spot_32 spot_33 spot_34 spot_35 spot_36 spot_37 spot_38 spot_39"
+      "spot_40 spot_41 spot_42 spot_43 spot_44 spot_45 spot_46 spot_47 spot_48 spot_49"
+      "spot_50 spot_51 spot_52 spot_53 spot_54 spot_55 spot_56 spot_57 spot_58 spot_59"
+      "spot_60 spot_61 spot_62 spot_63 spot_64 spot_65 spot_66 spot_67 spot_68 spot_69"
+      "spot_70 spot_71 spot_72 spot_73 spot_74 spot_75 spot_76 spot_77 spot_78 spot_79"
+      "spot_80 spot_81 spot_82 spot_83 spot_84 spot_85 spot_86 spot_87 spot_88 spot_89"
+      "spot_90 spot_91 spot_92 spot_93 spot_94 spot_95 spot_96 spot_97 spot_98 spot_99";
+  }
+
+  /* ******************************** */
+  /* Header grid layout */
+  /* Extra Small Screens */
+  /* ******************************** */
+  #header{
+    display:grid;
+    grid-template-columns: 20% 30% 20% 20% 10%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas:
+      "title title title title title"
+      "stars moves dollars dollars reset";
+  }
+}
+
+/* ******************************** */
+/* Set grid area for the #container */
+/* Large Screens */
+/* ******************************** */
+.leftHeaderArea {
+  grid-area: leftHeader;
+}
+
+.mainHeaderArea {
+  grid-area: mainHeader;
+}
+
+.rightHeaderArea {
+  grid-area: rightHeader;
+}
+
+.leftSidebarArea {
+  grid-area: leftSidebar;
+}
+
+.gameBoardArea {
+  grid-area: main;
+}
+
+.rightSidebarArea {
+  grid-area: rightSidebar;
+}
+
+.footerArea {
+  grid-area: mainFooter;
+}
+
+/* ******************************** */
+/* Set display for above elements of #container */
+/* ******************************** */
+.leftHeaderStyle,
+.mainHeaderStyle,
+.rightHeaderStyle,
+.leftSidebarStyle,
+.gameBoardStyle,
+.rightSidebarStyle,
+.footerStyle {
+  display: grid;
+}
+
+/* ******************************** */
+/* Set grid area for #header */
+/* ******************************** */
+.headerTop{
+  grid-area: title;
+  align-self: center;
+  justify-self: center;
+}
+
+.headerStars{
+  grid-area: stars;
+  align-self: center;
+  justify-self: center;
+}
+
+.headerMoves{
+  grid-area: moves;
+  align-self: center;
+  justify-self: center;
+}
+
+.headerDollars{
+  grid-area: dollars;
+  align-self: center;
+  justify-self: center;
+}
+
+.reset{
+  grid-area: reset;
+  align-self: center;
+  justify-self: center;
+}
+
+.footerEarnings{
+  align-self: center;
+  align-self: start;
+  justify-self: center;
+}
+
+/* ******************************** */
+/* Content styles */
+/* ******************************** */
+
+/* LARGE SCREENS START HERE*/
+@media screen and (min-width: 992px){
+  .giantText {
+      font-family: 'moneyFont';
+      font-size: 80px;
+      color: #6b8200;
+      letter-spacing: 7px;
+      margin: 0;
+  }
+
+  .symbol{
+    text-align: center;
+    line-height: 68px;
+    color: #6b8200;
+    font-size: 2.5em;
+  }
+
+  .moves{
+    font-family: 'moneyFont';
+    font-size: 36px;
+    color: #ff9d00;
+    padding: 5px;
+  }
+
+  .dollarsText{
+    font-family: 'moneyFont';
+    font-size: 36px;
+    color: #00d61f;
+    padding: 5px;
+    margin: 0;
+  }
+
+  .restart {
+      cursor: pointer;
+      font-size: 36px;
+      color: #ff9d00;
+      padding: 5px;
+  }
+
+  .earnings{
+    font-family: 'moneyFont';
+    font-size: 36px;
+    /* color: #00d61f; */
+    padding: 5px;
+    margin: 0;
+  }
+
+  .boxsize{
+    width: 100%;
+  	height: 700px;
+  }
+}
+
+/* MEDIUM AND LARGE SCREENS START HERE*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .giantText {
+      font-family: 'moneyFont';
+      font-size: 64px;
+      color: #6b8200;
+      letter-spacing: 7px;
+      margin: 0;
+  }
+
+  .symbol{
+    text-align: center;
+    line-height: 58px;
+    color: #6b8200;
+    font-size: 2.2em;
+  }
+
+  .moves{
+    font-family: 'moneyFont';
+    font-size: 36px;
+    color: #ff9d00;
+    padding: 5px;
+  }
+
+  .dollarsText{
+    font-family: 'moneyFont';
+    font-size: 36px;
+    color: #00d61f;
+    padding: 5px;
+    margin: 0;
+  }
+
+  .restart {
+      cursor: pointer;
+      font-size: 36px;
+      color: #ff9d00;
+      padding: 5px;
+  }
+
+  .earnings{
+    font-family: 'moneyFont';
+    font-size: 36px;
+    color: #00d61f;
+    padding: 5px;
+    margin: 0;
+  }
+
+  .boxsize{
+    width: 100%;
+  	height: 600px;
+  }
+}
+
+/* SMALL SCREENS START HERE*/
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .headerTop{
+    grid-area: title;
+    align-self: end;
+    justify-self: center;
+  }
+
+  .giantText {
+      font-family: 'moneyFont';
+      font-size: 54px;
+      color: #6b8200;
+      letter-spacing: 7px;
+      margin: 0;
+  }
+
+  .symbol{
+    text-align: center;
+    line-height: 48px;
+    color: #6b8200;
+    font-size: 2em;
+  }
+
+  .stars{
+      font-size: 26px;
+  }
+
+  .moves{
+    font-family: 'moneyFont';
+    font-size: 30px;
+    color: #ff9d00;
+    padding: 5px;
+  }
+
+  .dollarsText{
+    font-family: 'moneyFont';
+    font-size: 30px;
+    color: #00d61f;
+    padding: 5px;
+    margin: 0;
+  }
+
+  .restart {
+      cursor: pointer;
+      font-size: 30px;
+      color: #ff9d00;
+      padding: 5px;
+  }
+
+  .earnings{
+    font-family: 'moneyFont';
+    font-size: 30px;
+    color: #00d61f;
+    padding: 5px;
+    margin: 0;
+  }
+
+  .boxsize{
+    width: 100%;
+  	height: 500px;
+  }
+}
+
+/* EXTRA-SMALL SCREENS START HERE*/
+@media screen and (min-width: 320px) and (max-width: 575px){
+
+  .headerTop{
+    grid-area: title;
+    align-self: end;
+    justify-self: center;
+  }
+
+  .giantText {
+      font-family: 'moneyFont';
+      font-size: 28px;
+      color: #6b8200;
+      letter-spacing: 7px;
+      margin: 0;
+  }
+
+  .stars{
+      font-size: 14px;
+  }
+
+  .symbol{
+    text-align: center;
+    line-height: 28px;
+    color: #6b8200;
+    font-size: 1em;
+  }
+
+  .moves{
+    font-family: 'moneyFont';
+    font-size: 18px;
+    color: #ff9d00;
+    padding: 5px;
+  }
+
+  .dollarsText{
+    font-family: 'moneyFont';
+    font-size: 18px;
+    color: #00d61f;
+    padding: 5px;
+    margin: 0;
+  }
+
+  .restart {
+      cursor: pointer;
+      font-size: 18px;
+      color: #ff9d00;
+      padding: 5px;
+  }
+
+  .earnings{
+    font-family: 'moneyFont';
+    font-size: 18px;
+    color: #00d61f;
+    padding: 5px;
+    margin: 0;
+  }
+
+  .boxsize{
+    width: 100%;
+  	height: 300px;
+  }
+}
+
+.success {
+  display:none;
+	background-color: #6b8200;
+	text-align: center;
+	font-family: 'moneyFont';
+  font-size: 18px;
+	line-height: normal;
+	color: yellow;
+	position: absolute;
+  z-index: 5000;
+}
+
+.failure {
+  display:none;
+	background-color: #820B00;
+	text-align: center;
+	font-family: 'moneyFont';
+  font-size: 18px;
+	line-height: normal;
+	color: white;
+	position: absolute;
+  z-index: 5000;
+}
+
+.messageText{
+  padding:10px;
+}
+
+.orangeText{
+  color: #ff9d00;
+}
+
+.earningsColor{
+  color: #00d61f;
+}
+
+.starsEarned {
+  color: yellow;
+}
