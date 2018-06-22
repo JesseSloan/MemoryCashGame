@@ -20,4 +20,4 @@ All I ever wanted was whirled peas.
 
 Give peas a chance!
 
-And lastly, the only emporer is the Emporer of Ice Cream!  (tehehe - have fun googling that.)
+And lastly, the only Emporer is the Emporer of Ice Cream!  (tehehe - have fun googling that.)
