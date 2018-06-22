@@ -16,6 +16,10 @@ I added two things that I did not create:
 
 You should start by opening the index.html file in the browser and simply trying out the game.  Then, when you are bored with that, open the testing.js file.  There you will find further instructions that will help you to evaluate what is going on.
 
+One thing I just discovered, that I have yet to figure out...
+
+I uploaded this to GoDaddy at http://memorycash.fatmunkey.com/ to test it out on the internet instead of just my chrome browser.  It's putting NaN on the page like this -  "Lifetime Earnings= $NaN Stars = NaN" at the bottom of the page.  In chrome on my local machine it shows the text as expected.  I used parseFloat(x), parseInt(x, 10) and toFixed(2), in several places to process the data so it would format correctly on the screen but still allow the needed math in th background.  Like I said I works fine in the browser on my local machine.  I wonder how I would even debug this...beyond trial and error and uploading the file a whole bunch of times.  sigh...maybe someone will have a suggestion. 
+
 All I ever wanted was whirled peas.
 
 Give peas a chance!
